@@ -21,7 +21,7 @@ def index(request):
         if (request.session['username']):
             username = request.session['username']
             content['username'] = username
-    return render(request, 'index.html',content)
+    return render(request, '_index.html',content)
 
 def signin(request):
     a = SigninCustomersForm()

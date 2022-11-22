@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -14,15 +15,15 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-  <link rel="stylesheet" href="assets/user/css/index.css">
+  <link rel="stylesheet" href="{% static 'customers/css/index.css' %}">
   
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
   <!-- owlCousel -->
-  <link rel="stylesheet" href="assets/lib/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/lib/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{% static 'customers/css/lib/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'customers/css/lib/owl.theme.default.min.css' %}">
 
   <!-- slick -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
@@ -35,7 +36,7 @@
 </head>
 
 <body>
-  <%@ include file="layout/user/header.jsp" %>
+  {% comment %} {% extends "header.html" %} {% endcomment %}
   <!-- Cover -->
   <section class="myCover">
     <div class="cover__content">
@@ -81,21 +82,21 @@
     <div class="myIntro__content container">
       <div class="row">
         <div class="col-4 myIntro__item d-flex">
-          <img class="mr-4" src="assets/user/images/bus-car-icon.svg">
+          <img class="mr-4" src="static/customers/images/bus-car-icon.svg">
           <div class="Intro__text">
             <h3>2000+ nhà xe chất lượng cao</h3>
             <p>5000+ tuyến đường trên toàn quốc, chủ động và đa dạng lựa chọn.</p>
           </div>
         </div>
         <div class="col-4 myIntro__item d-flex">
-          <img class="mr-4" src="assets/user/images/yellow-ticket-icon.svg">
+          <img class="mr-4" src="static/customers/images/yellow-ticket-icon.svg">
           <div class="Intro__text">
             <h3>Đặt vé dễ dàng</h3>
             <p>Đặt vé chỉ với 60s. Chọn xe yêu thích cực nhanh và thuận tiện.</p>
           </div>
         </div>
         <div class="col-4 myIntro__item d-flex">
-          <img class="mr-4" src="assets/user/images/completement-icon.svg">
+          <img class="mr-4" src="static/customers/images/completement-icon.svg">
           <div class="Intro__text">
             <h3>Đảm bảo có vé</h3>
             <p>Hoàn ngay 150% nếu không có vé, mang đến hành trình trọn vẹn.</p>
@@ -111,19 +112,19 @@
     <div class="Intro2__content d-grid">
       <div class="item">
         <div class="content">
-          <img src="assets/user/images/__banner-home_641x500-(1).png">
+          <img src="static/customers/images/__banner-home_641x500-(1).png">
         </div>
       </div>
 
       <div class="item">
         <div class="content">
-          <img src="assets/user/images/remove_banner-home_641x500.png">
+          <img src="static/customers/images/remove_banner-home_641x500.png">
         </div>
       </div>
 
       <div class="item">
         <div class="content">
-          <img src="assets/user/images/newusers_banner-home_641x500.png">
+          <img src="static/customers/images/newusers_banner-home_641x500.png">
         </div>
       </div>
 
@@ -137,7 +138,7 @@
       <div class="myStudent owl-carousel owl-theme">
         <div class="item">
           <div class="card" style="width:220px">
-            <img class="card-img-top" src="assets/user/images/bx-mien-dong.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="static/customers/images/bx-mien-dong.jpg" alt="Card image" style="width:100%">
             <div iv class="card-body">
               <h4 class="card-text">Bến xe Miền Đông</h4>
               <div class="icon">
@@ -161,7 +162,7 @@
 
         <div class="item">
           <div class="card" style="width:220px">
-            <img class="card-img-top" src="assets/user/images/bx-gia-lam.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="static/customers/images/bx-gia-lam.jpg" alt="Card image" style="width:100%">
             <div iv class="card-body">
               <h4 class="card-text">Bến xe Gia Lâm</h4>
               <div class="icon">
@@ -186,7 +187,7 @@
 
         <div class="item">
           <div class="card" style="width:220px">
-            <img class="card-img-top" src="assets/user/images/bx-my-dinh.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="static/customers/images/bx-my-dinh.jpg" alt="Card image" style="width:100%">
             <div iv class="card-body">
               <h4 class="card-text">Bến xe Mỹ Đình</h4>
               <div class="icon">
@@ -210,7 +211,7 @@
 
         <div class="item">
           <div class="card" style="width:220px">
-            <img class="card-img-top" src="assets/user/images/bx-nuoc-ngam.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="static/customers/images/bx-nuoc-ngam.jpg" alt="Card image" style="width:100%">
             <div iv class="card-body">
               <h4 class="card-text">Bến xe Nước Ngầm</h4>
               <div class="icon">
@@ -234,7 +235,7 @@
 
         <div class="item">
           <div class="card" style="width:220px">
-            <img class="card-img-top" src="assets/user/images/ben-xe-da-nang-vntrip.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="static/customers/images/ben-xe-da-nang-vntrip.jpg" alt="Card image" style="width:100%">
             <div iv class="card-body">
               <h4 class="card-text">Bến xe Đà Nẵng</h4>
               <div class="icon">
@@ -259,7 +260,7 @@
 
         <div class="item">
           <div class="card" style="width:220px">
-            <img class="card-img-top" src="assets/user/images/ben-xe-dat-lat.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="static/customers/images/ben-xe-dat-lat.jpg" alt="Card image" style="width:100%">
             <div iv class="card-body">
               <h4 class="card-text">Bến xe Đà Lạt</h4>
               <div class="icon">
@@ -285,9 +286,7 @@
   </section>
 
 
-
-<%--   <%@ include file="layout/user/footer.jsp" %> --%>
-  <jsp:include page="layout/user/footer.jsp" />
+  {% comment %} {% extends "footer.html" %} {% endcomment %}
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -300,7 +299,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <!-- owlCousel -->
-  <script src="assets/lib/owl.carousel.min.js"></script>
+  <script src="{% static 'customers/js/lib/owl.carousel.min.js' %}"></script>
 
 
   <script>
