@@ -1,0 +1,19 @@
+.bg {
+	background-color: #0090D5;
+}
+
+.title {
+	margin-top: 10px;
+	width: 100%;
+	height: 40px;
+	font-size: 30px;
+	color: white;
+}
+
+#centerthrowable{
+	height: 600px;
+}
+
+.black{
+	width: 1336px;
+}
